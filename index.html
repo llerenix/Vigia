@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIGIA | DriveSense AI</title>
+
+  <!-- Conexión con el archivo CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Tipografía e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- NAVEGACIÓN -->
+<nav>
+  <a class="logo" href="#inicio">
+    <i class="fa-solid fa-shield-heart"></i>
+    <span>DriveSense AI</span>
+  </a>
+
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#producto">Producto</a></li>
+    <li><a href="#tecnologia">Tecnología</a></li>
+    <li><a href="#app">App</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+  </ul>
+
+  <a class="demoButton" href="#contacto">Solicitar Demo</a>
+</nav>
+
+<!-- PORTADA -->
+<section id="inicio" class="hero">
+  <div class="heroLeft">
+    <h1>
+      Detección temprana de
+      <span>sepsis</span>
+    </h1>
+
+    <p>
+      VIGIA utiliza Inteligencia Artificial y sensores biométricos
+      para prever la infección por sepsis.
+    </p>
+
+    <div class="heroButtons">
+      <a class="primary" href="#producto">Descubrir</a>
+      <a class="secondary" href="#tecnologia">Ver Video</a>
+    </div>
+  </div>
+
+  <div class="heroRight">
+    <div class="wheelGlow"></div>
+
+    <img
+      class="wheel"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFqP3r3RGMHie0OAbzHEmM8P0oK3Bztj1nc_IECCum5lL2a1Sx8LOwRI&s=10"
+      alt="Ilustración de un cuerpo humano con señales de infección"
+    >
+  </div>
+</section>
+
+<!-- CIFRAS -->
+<section class="numbers">
+  <div>
+    <h2>95%</h2>
+    <p>Precisión IA</p>
+  </div>
+
+  <div>
+    <h2>240</h2>
+    <p>Datos / segundo</p>
+  </div>
+
+  <div>
+    <h2>5</h2>
+    <p>Sensores activos</p>
+  </div>
+
+  <div>
+    <h2>1 s</h2>
+    <p>Respuesta</p>
+  </div>
+</section>
+
+<!-- PRODUCTO -->
+<section id="producto">
+  <div class="productIntro">
+    <h2>Tecnología que cuida al paciente en UCI</h2>
+
+    <p class="subtitle">
+      VIGIA es un sistema IoT de bajo costo diseñado para monitorear
+      continuamente los signos vitales de pacientes con riesgo de sepsis.
+      Utiliza el sensor MAX30100 para medir la saturación de oxígeno en
+      sangre y la frecuencia cardíaca, mientras que el MLX90614 mide la
+      temperatura corporal. Una Raspberry Pi recibe y procesa estas
+      señales en tiempo real, utilizando un modelo ligero de aprendizaje
+      automático para estimar la presión arterial sistólica sin sensores
+      adicionales. Los datos se transmiten mediante Wi-Fi y MQTT a la nube,
+      donde se aplican los criterios NEWS-2 para identificar signos de
+      alerta. Cuando se detectan patrones anormales, el personal médico
+      recibe una alerta para intervenir oportunamente.
+    </p>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <i class="fa-solid fa-heart-pulse cardIcon"></i>
+      <h3>Sensor Cardíaco</h3>
+      <p>Analiza variaciones del ritmo cardíaco.</p>
+
+      <img
+        class="Sensorpm"
+        src="https://abacasstorageaccnt.blob.core.windows.net/cirkit/33e878fc-3c49-4c91-8c4e-3f0665b3feb6.png"
+        alt="Sensor cardíaco"
+        loading="lazy"
+      >
+    </article>
+
+    <article class="card">
+      <i class="fa-solid fa-temperature-half cardIcon"></i>
+      <h3>Temperatura</h3>
+      <p>Monitorea cambios fisiológicos.</p>
+
+      <img
+        class="Sensorpm"
+        src="https://d229kd5ey79jzj.cloudfront.net/3017/images/3017_1_H.png"
+        alt="Sensor de temperatura"
+        loading="lazy"
+      >
+    </article>
+
+    <article class="card">
+      <i class="fa-solid fa-microchip cardIcon"></i>
+      <h3>Procesador IA</h3>
+      <p>Fusiona todos los datos en tiempo real.</p>
+
+      <img
+        class="Sensorpm"
+        src="https://www.ibm.com/content/adobe-cms/us/en/think/topics/random-forest/jcr:content/root/table_of_contents/body-article-8/image_123456789.coreimg.png/1763644459943/iclh-diagram-batch-03-27.png"
+        alt="Modelo de aprendizaje automático"
+        loading="lazy"
+      >
+    </article>
+  </div>
+</section>
+
+<!-- INTELIGENCIA ARTIFICIAL -->
+<section id="tecnologia" class="technology">
+  <div class="aiLeft">
+    <h2>Inteligencia Artificial</h2>
+
+    <p>
+      Nuestro algoritmo analiza cientos de variables por segundo
+      para determinar el riesgo de una infección de sepsis por medio
+      de las métricas NEWS-2.
+    </p>
+
+    <ul>
+      <li><i class="fa-solid fa-check"></i> Ritmo cardíaco</li>
+      <li><i class="fa-solid fa-check"></i> Respiración</li>
+    </ul>
+  </div>
+
+  <div class="brain">
+    <div class="pulse"></div>
+    <i class="fa-solid fa-brain"></i>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="timeline">
+  <div class="sectionHeading">
+    <h2>¿Cómo funciona?</h2>
+  </div>
+
+  <div class="steps">
+    <article class="step">
+      <div class="circle">1</div>
+      <h3>Sensores</h3>
+      <p>Capturan datos biométricos.</p>
+    </article>
+
+    <article class="step">
+      <div class="circle">2</div>
+      <h3>IA</h3>
+      <p>Analiza patrones.</p>
+    </article>
+
+    <article class="step">
+      <div class="circle">3</div>
+      <h3>Evaluación</h3>
+      <p>Detecta riesgo.</p>
+    </article>
+
+    <article class="step">
+      <div class="circle">4</div>
+      <h3>Alarma</h3>
+      <p>Sonido + vibración.</p>
+    </article>
+
+    <article class="step">
+      <div class="circle">5</div>
+      <h3>Notificación</h3>
+      <p>La App recibe la alerta.</p>
+    </article>
+  </div>
+</section>
+
+<!-- APLICACIÓN -->
+<section id="app" class="appSection">
+  <div class="appDescription">
+    <h2>Aplicación Móvil</h2>
+    <p>
+      Consulta los indicadores y las alertas desde una interfaz
+      diseñada para facilitar el seguimiento de la información.
+    </p>
+  </div>
+
+  <div class="phone">
+    <div class="screen">
+      <div class="appHeader">
+        <i class="fa-solid fa-shield-heart"></i>
+        <span>VIGIA</span>
+      </div>
+
+      <p class="notification">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        Microsueño Detectado
+      </p>
+
+      <h3>Estado del paciente</h3>
+
+      <div class="metric">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>47 bpm</span>
+      </div>
+
+      <div class="metric">
+        <i class="fa-solid fa-lungs"></i>
+        <span>Respiración irregular</span>
+      </div>
+
+      <div class="metric">
+        <i class="fa-solid fa-eye"></i>
+        <span>Ojos cerrados 2.4 s</span>
+      </div>
+
+      <button class="appButton" type="button">
+        Activar Protocolo
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo" class="teamSection">
+  <div class="sectionHeading">
+    <h2>Nuestro Equipo</h2>
+  </div>
+
+  <div class="team">
+    <article class="teamCard">
+      <div class="teamAvatar">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <h3>Alejandro Llerena Pinzón</h3>
+      <p>Ingeniería Mecatrónica</p>
+      <p>Pontificia Universidad Javeriana</p>
+      <a href="mailto:llernap.alejandro@javeriana.edu.co">
+        Contactar
+      </a>
+    </article>
+
+    <article class="teamCard">
+      <div class="teamAvatar">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <h3>Juan Esteban Malagon</h3>
+      <p>Ingeniería Mecatrónica</p>
+      <p>Pontificia Universidad Javeriana</p>
+      <a href="mailto:juanemalagon@javeriana.edu.co">
+        Contactar
+      </a>
+    </article>
+
+    <article class="teamCard">
+      <div class="teamAvatar">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <h3>Laura Juliana Garzón</h3>
+      <p>Ingeniería de Sistemas</p>
+      <p>Pontificia Universidad Javeriana</p>
+      <a href="mailto:garzonlj@javeriana.edu.co">
+        Contactar
+      </a>
+    </article>
+  </div>
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer id="contacto">
+  <h2>DriveSense AI</h2>
+
+  <p>
+    Innovando la seguridad vial mediante Internet de las Cosas
+    e Inteligencia Artificial.
+  </p>
+
+  <div class="social">
+    <a href="#contacto" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="#contacto" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#contacto" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+  <p class="copyright">© 2026 VIGIA · Proyecto académico</p>
+</footer>
+
+</body>
+</html>
