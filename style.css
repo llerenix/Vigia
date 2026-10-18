@@ -17,35 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* FONDO ANIMADO ORIGINAL */
-
-body::before {
-  content: "";
-  position: fixed;
-  width: 120vw;
-  height: 120vh;
-  top: -10%;
-  left: -10%;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 20% 20%,
-      rgba(0,170,255,.15), transparent 40%),
-    radial-gradient(circle at 80% 30%,
-      rgba(0,255,255,.08), transparent 45%),
-    radial-gradient(circle at 50% 80%,
-      rgba(90,0,255,.10), transparent 50%);
-  animation: bgMove 15s infinite alternate;
-  z-index: -1;
-}
-
-@keyframes bgMove {
-  from {
-    transform: translateY(-40px) translateX(-30px);
-  }
-  to {
-    transform: translateY(40px) translateX(40px);
-  }
-}
 
 /* ====================================
    NAVBAR ORIGINAL
